@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,14 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://kit.fontawesome.com/54f0e24f63.js" crossorigin="anonymous"></script>
+
 
     <!-- daisyUI CDN -->
 
@@ -22,11 +28,186 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <!-- Header Section -->
-     <header>
-        
-     </header>
+<body class="">
+    <nav class="p-5 bg-base-400 md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between ">
+            <span class="text-2xl font-bold cursor-pointer">
+                <i class="p-2 mr-2 text-black -rotate-45 rounded-full bg-lime-300 fa-solid fa-arrow-right"></i>Rinterio
+            </span>
+            <span class="block mx-2 text-3xl cursor-pointer md:hidden">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-gray-500 hover:text-gray-950 hover:font-semibold">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-gray-500 hover:text-gray-950 hover:font-semibold">Service</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-gray-500 hover:text-gray-950 hover:font-semibold">Portfolio</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-gray-500 hover:text-gray-950 hover:font-semibold">Blogs</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-gray-500 hover:text-gray-950 hover:font-semibold">Contact Us</a>
+            </li>
+
+            <i class="p-2 mr-5 text-gray-500 bg-white rounded-full cursor-pointer fa-solid fa-magnifying-glass"></i>
+            <i
+                class="p-2 mr-5 text-gray-500 bg-white rounded-full cursor-pointer text--500 fa-solid fa-cart-shopping"></i>
+            <button class="p-2 text-xl font-bold bg-lime-400 rounded-3xl hover:bg-[#87acac]">
+                Book Consultt<i
+                    class="p-2 ml-2 text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"></i>
+            </button>
+
+        </ul>
+
+    </nav>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100'), list.classList.add('z-30')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+
+    <!--  -->
+    <section>
+        <div class="min-h-screen hero bg-base-20">
+            <div class="text-center hero-content">
+
+                <div class="max-w-">
+                    <img class="static mx-auto" src="./assets/banner.png" alt="">
+                    <h1 class="text-5xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal <br> accents, and large windows that flood the space with natural
+                        light.
+                    </p>
+                    <button class="text-xl font-semibold btn bg-lime-200 rounded-3xl">View Details<i
+                            class="p-2 -rotate-45 rounded-full fa-solid fa-arrow-right bg-lime-500"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="relative flex flex-col gap-4 p-20 mx-auto ml-0 bg-base-200 md:flex-row lg:flex-row">
+            <div class="mx-auto">
+
+                <img src="./assets/Vector.png" alt="" class="absolute left-0 p-4 top-2 md:left-16">
+                <button class="p-2 mb-2 text-xl font-semibold bg-white rounded-3xl">About Us</button>
+
+                <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1><br>
+                <p>The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="flex gap-3 p-3 mt-5 bg-white rounded-lg">
+                    <img src="./assets/commercial.png" alt="">
+                    <div>
+                        <h3 class="text-xl font-semibold">Commercial</h3>
+                        <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 p-3 mt-5 bg-white rounded-lg">
+                    <img src="./assets/residential.png" alt="">
+                    <div>
+                        <h3 class="text-xl font-semibold">Residential</h3>
+                        <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-full">
+                <img class="h-full full w-" src="./assets/Rectangle.png" alt="">
+            </div>
+        </section>
+        <!-- Card -->
+        <section class="p-20 bg-base-200">
+            <section class="flex flex-col justify-around gap-16 p-10 bg-white rounded-lg md:flex-row">
+                <div class="flex flex-col items-center gap-2">
+                    <i class="text-2xl text-gray-600 fa-solid fa-message"></i>
+                    <h1 class="text-5xl font-bold text-gray-500">235+</h1>
+                    <p class="font-semibold text-gray-500">Happy Client Review</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="text-2xl text-gray-600 fa-solid fa-message"></i>
+                    <h1 class="text-5xl font-bold text-gray-500">50+</h1>
+                    <p class="font-semibold text-gray-500">Work Departments</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="text-2xl text-gray-600 fa-solid fa-message"></i>
+                    <h1 class="text-5xl font-bold text-gray-500">30k+</h1>
+                    <p class="font-semibold text-gray-500">Our Happy Client</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="text-2xl text-gray-600 fa-solid fa-message"></i>
+                    <h1 class="text-5xl font-bold text-gray-500">307+</h1>
+                    <p class="font-semibold text-gray-500">Staff Members</p>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- Our Work Process -->
+        <section class=" bg-base-200">
+            <div class="text-center ">
+                <span class="p-2 mb-3 text-base bg-white rounded-3xl"><i
+                        class="p-2 rounded-full fa-solid fa-arrow-right"></i> How we works</span>
+                <h1 class="mb-3 text-5xl font-bold">Our Work Process</h1>
+                <p class="mb-3 text-base font-normal">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div class="flex flex-col justify-between w-11/12 gap-5 mx-auto md:flex-row lg:flex-row sm:w-9/12/12">
+
+
+                <div class=" p-6 rounded-xl bg-[#e7c1d3]">
+                    <img src="./assets/concept.png" alt="">
+
+                    <h5 class="mt-2 mb-2 text-2xl font-semibold tracking-tight text-black">Concept</h5>
+
+                    <p class="mb-3 font-normal text-gray-500 ">The barn house captivates with its blend of rustic charm
+                        and modern.</p>
+
+                </div>
+                <div class=" p-6 rounded-xl bg-[#efda6e]">
+                    <img src="./assets/flow-chart.png" alt="">
+
+                    <h5 class="mt-2 mb-2 text-2xl font-semibold tracking-tight text-black">Design Process</h5>
+
+                    <p class="mb-3 font-normal text-gray-500 ">The barn house captivates with its blend of rustic charm
+                        and modern.</p>
+
+                </div>
+                <div class=" p-6 rounded-xl bg-[#a4dac3]">
+                    <img src="./assets/vision.png" alt="">
+
+                    <h5 class="mt-2 mb-2 text-2xl font-semibold tracking-tight text-black">Supervision</h5>
+
+                    <p class="mb-3 font-normal text-gray-500 ">The barn house captivates with its blend of rustic charm
+                        and modern.</p>
+
+                </div>
+                <div class=" p-6 rounded-xl bg-[#77aaea]">
+                    <img src="./assets/budget-planning.png" alt="">
+
+                    <h5 class="mt-2 mb-2 text-2xl font-semibold tracking-tight text-black">Budget Planning</h5>
+
+                    <p class="mb-3 font-normal text-gray-500 ">The barn house captivates with its blend of rustic charm
+                        and modern.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--  -->
+    </main>
 </body>
 
 </html>

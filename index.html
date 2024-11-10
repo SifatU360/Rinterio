@@ -158,7 +158,7 @@
 
 
         <!-- Our Work Process -->
-        <section class=" bg-base-200">
+        <section class=" bg-base-200 pb-32 mb-10">
             <div class="text-center ">
                 <span class="p-2 mb-3 text-base bg-white rounded-3xl"><i
                         class="p-2 rounded-full fa-solid fa-arrow-right"></i> How we works</span>
@@ -166,7 +166,7 @@
                 <p class="mb-3 text-base font-normal">The barn house captivates with its blend of rustic charm and
                     modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
             </div>
-            <div class="flex flex-col justify-between w-11/12 gap-5 mx-auto md:flex-row lg:flex-row sm:w-9/12/12">
+            <div class="flex flex-col justify-between w-full  gap-8 mx-auto md:flex-row lg:flex-row sm:w-9/12">
 
 
                 <div class=" p-6 rounded-xl bg-[#e7c1d3]">
@@ -210,44 +210,181 @@
         </section>
 
 
+        <!-- Our Latest Portfolio section -->
+
+        <section>
+
+            <div class="bg-white py-12">
+                <div class="text-center">
+                    <button class="bg-green-100 text-green-700 rounded-full px-4 py-1 mb-4 hover:bg-green-200">
+                        ➔ Explore our Latest Works
+                    </button>
+                    <h2 class="text-5xl font-bold">Our Latest Portfolio</h2>
+                    <p class="text-gray-500 mt-2">The barn house captivates with its blend of rustic charm and modern
+                        sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+                <!-- Custom Grid with specific widths -->
+                <div class="mt-8 max-w-[1170px] mx-auto space-y-6 ">
+                    <!-- First Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" style="grid-template-columns: 772px  374px;">
+                        <!-- First Item -->
+                        <div class="bg-white rounded-lg overflow-hidden flex h-[320px] ">
+                            <img src="./assets/img1.png" alt="Portfolio Image" class="w-full h-fit">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold">Commercial</h3>
+                                <p class="text-gray-500 mt-2">The barn house captivates with its blend of rustic charm
+                                    and modern.</p>
+                                <button class="flex items-center text-green-500 mt-4 hover:underline">
+                                    View Details ➔
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Second Item -->
+                        <div class="bg-white  rounded-lg overflow-hidden h-[320px] ">
+                            <img src="./assets/img2.png" alt="Portfolio Image" class="w-full h-80">
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="grid md:grid-cols-3 grid-cols-1 gap-6"
+                        style="grid-template-columns: 274px  573px 274px;">
+                        <!-- Third Item -->
+                        <div class="bg-white rounded-lg overflow-hidden ">
+                            <img src="./assets/img3.png" alt="Portfolio Image" class="w-full  h-[320px]">
+
+                        </div>
+
+                        <!-- Fourth Item -->
+                        <div class="bg-white  rounded-lg overflow-hidden col-span-1 flex h-[320px] justify-between ">
+                            <img src="./assets/img4.png" alt="Portfolio Image" class="w-1/2 h-[380px] ">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold">Commercial</h3>
+                                <p class="text-gray-500 mt-2">The barn house captivates with its blend of rustic charm
+                                    and modern.</p>
+                                <button class="flex items-center text-green-500 mt-4 hover:underline">
+                                    View Details ➔
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Fifth Item -->
+                        <div class="bg-white rounded-lg overflow-hidden ">
+                            <img src="./assets/img5.png" alt="Portfolio Image" class="w-full h-[320px] ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
         <!--  -->
 
+        <section class="bg-base-200">
+            <div class="w-full max-w-6xl mx-auto px-6 py-12 bg-base-200">
+                <!-- Section Header -->
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold text-gray-900">Meet the Team</h2>
+                    <p class="text-gray-500 mt-2">Our talented team members who make everything possible.</p>
+                </div>
 
-         <!-- Discuss section -->
-    <section class="flex items-center justify-center min-h-screen bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover">
-        <div class="w-9/12">
-            <div class="mb-6 text-center">
-                <button
-                    class="inline-flex items-center px-4 py-2 mb-4 font-semibold text-[#494949] bg-[#dfecd0] rounded-full">
-                    <span class="mb-1 mr-2 text-2xl">→</span> Let’s Connect
-                </button>
-                <h2 class="text-5xl font-bold text-[#212121]">Let's Discuss Next Project</h2>
-                <p class="mt-2 text-gray-500">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring
-                    weathered wood, sleek metal accents.
-                </p>
+                <!-- Team Members Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <!-- Team Member Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full mb-4" src="./assets/alexxx.jpg" alt="Team Member">
+                        <h3 class="text-xl font-semibold text-gray-800">Alex Johnson</h3>
+                        <p class="text-gray-500 mb-4">Property Manager</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-500 hover:text-blue-600">
+                                <i class="fab fa-facebook"></i> <!-- Font Awesome Icon (add font-awesome) -->
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-pink-600 hover:text-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for each team member -->
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full mb-4" src="./assets/des.jpg" alt="Team Member">
+                        <h3 class="text-xl font-semibold text-gray-800">Sophie Lee</h3>
+                        <p class="text-gray-500 mb-4">Customer Support Specialist</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-500 hover:text-blue-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-pink-600 hover:text-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+                        <img class="w-24 h-24 rounded-full mb-4" src="./assets/smithh.jpg" alt="Team Member">
+                        <h3 class="text-xl font-semibold text-gray-800">Michael Smith</h3>
+                        <p class="text-gray-500 mb-4">Marketing Coordinator</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-500 hover:text-blue-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-pink-600 hover:text-pink-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form class="space-y-4">
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <input type="text" placeholder="First Name*" class="w-full p-7 input rounded-3xl" />
-                    <input type="text" placeholder="Last Name*" class="w-full p-7 input rounded-3xl" />
+        </section>
+        <!-- Discuss section -->
+        <section class="flex items-center justify-center min-h-screen bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover">
+            <div class="w-9/12">
+                <div class="mb-6 text-center">
+                    <button
+                        class="inline-flex items-center px-4 py-2 mb-4 font-semibold text-[#494949] bg-[#dfecd0] rounded-full">
+                        <span class="mb-1 mr-2 text-2xl">→</span> Let’s Connect
+                    </button>
+                    <h2 class="text-5xl font-bold text-[#212121]">Let's Discuss Next Project</h2>
+                    <p class="mt-2 text-gray-500">
+                        The barn house captivates with its blend of rustic charm and modern sophistication,
+                        <br>featuring
+                        weathered wood, sleek metal accents.
+                    </p>
                 </div>
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <input type="text" placeholder="Phone Number*" class="w-full input rounded-3xl p-7" />
-                    <input type="email" placeholder="Email Number*" class="w-full input rounded-3xl p-7" />
-                </div>
-                <textarea placeholder="Write your message here" class="w-full p-7 h-60 textarea rounded-3xl"></textarea>
-                <button class="p-2 text-xl font-bold bg-lime-400 rounded-3xl hover:bg-[#87acac] w-full">
-                    Send Mail<i
-                        class="p-2 ml-2 text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"></i>
-                </button>
-            </form>
-        </div>
-    </section>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <input type="text" placeholder="First Name*" class="w-full p-7 input rounded-3xl" />
+                        <input type="text" placeholder="Last Name*" class="w-full p-7 input rounded-3xl" />
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <input type="text" placeholder="Phone Number*" class="w-full input rounded-3xl p-7" />
+                        <input type="email" placeholder="Email Number*" class="w-full input rounded-3xl p-7" />
+                    </div>
+                    <textarea placeholder="Write your message here"
+                        class="w-full p-7 h-60 textarea rounded-3xl"></textarea>
+                    <button class="p-2 text-xl font-bold bg-lime-400 rounded-3xl hover:bg-[#87acac] w-full">
+                        Send Mail<i
+                            class="p-2 ml-2 text-white -rotate-45 bg-black rounded-full fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
 
-   
+
 
     <footer class="flex items-center justify-center min-h-screen text-white bg-gray-900">
         <div class="text-center">
